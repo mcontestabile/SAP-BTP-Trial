@@ -1,0 +1,15 @@
+@EndUserText.label: 'Access control for ZI_EXERCISE1_TRAVEL'
+@MappingRole: true
+define role ZI_EXERCISE1_TRAVEL {
+    grant
+        select
+            on
+                ZI_EXERCISE1_TRAVEL
+                    where
+//                        ( TravelStatus )                       
+//                      = aspect pfcg_auth ( ZOSTAT, ZOSTAT,  actvt = '03') 
+//                        and
+//                        CurrencyCode = 'EUR';
+                          true; 
+                        
+}

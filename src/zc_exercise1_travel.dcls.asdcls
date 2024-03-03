@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access control for ZI_EXERCISE1_TRAVEL'
+@MappingRole: true
+define role ZC_EXERCISE1_TRAVEL {
+    grant
+        select
+            on
+                ZC_EXERCISE1_TRAVEL
+                    where
+                        inheriting conditions from entity ZI_Exercise1_Travel;
+                        
+}
